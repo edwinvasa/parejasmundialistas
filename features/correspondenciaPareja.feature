@@ -17,4 +17,13 @@ Escenario: Visualizar el mensaje "Fichas corresponden" cuando el jugador corresp
 	E ingreso "a" como "Ficha2"
 	Y valido correspondencia
 	Entonces debo ver "Fichas corresponden"
+
+Escenario: Visualizar el mensaje "FALLO" cuando el jugador NO corresponde al país
+
+	Dado que abri el juego
+	Y que inicie un juego
+	E ingreso "a" como "Ficha1"
+	E ingreso "b" como "Ficha2"
+	Y valido correspondencia
+	Entonces debo ver "FALLO"
 	
