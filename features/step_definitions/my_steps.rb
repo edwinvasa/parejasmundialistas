@@ -16,7 +16,8 @@ Dado(/^que inicie un juego$/) do
 end
 
 Dado(/^ingreso "([^"]*)" como "([^"]*)"$/) do |valor, ficha|
-  fill_in(ficha, :with => valor)
+	select(valor,:from => ficha)
+    #fill_in(ficha, :with => valor)
 end
 
 Dado(/^valido correspondencia$/) do
