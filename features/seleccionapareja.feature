@@ -4,13 +4,12 @@
 Característica:
 	Como jugador
 	Quiero empezar a jugar
-	Para medir i destreza haciendo parejas
+	Para medir mi destreza haciendo parejas
 
 Criterios de aceptación:
 #- Debe tener el titulo "Selecciona tu pareja"
 
 
 Escenario: Debe tener el titulo "Selecciona tu pareja"
-	Dado que abri el juego
-	Cuando selecciono el boton iniciar
+	Dado que inicie un juego
 	Entonces debo ver "Selecciona tu pareja"	

@@ -5,6 +5,6 @@ get '/' do
 	erb :index
 end
 
-post '/selecciona_pareja' do
-	erb :selecciona_pareja
+post '/seleciona_pareja' do
+  erb :selecciona_pareja
 end
