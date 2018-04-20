@@ -6,13 +6,19 @@
 <body>
 	<div align="center">
 		<h1 align="center">Selecciona tu pareja</h1>
-		<h1>James - Colombia</h1>
+		
 			<form action="/verificar" method="post">
 				<select name="Ficha1">
-					<option value="James">James</option>
+					<option default>Selecciona</option>
+					<option value="a">James</option>
+					<option value="b">Ronaldo</option>
+					<option value="c">Messi</option>
 				</select>
 				<select name="Ficha2">
-					<option value="Colombia">Colombia</option>
+					<option default>Selecciona</option>
+					<option value="a">Colombia</option>
+					<option value="b">Portugal</option>
+					<option value="c">Argentina</option>
 				</select>
 				<input type="submit" value="Verificar">
 			</form>

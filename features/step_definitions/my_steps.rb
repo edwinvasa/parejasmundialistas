@@ -16,6 +16,7 @@ Dado(/^que inicie un juego$/) do
 end
 
 Dado(/^ingreso "([^"]*)" como "([^"]*)"$/) do |valor, ficha|
+	#find("option[value='valor']").click
 	select(valor,:from => ficha)
     #fill_in(ficha, :with => valor)
 end
