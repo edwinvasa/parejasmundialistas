@@ -1,9 +1,10 @@
 class Jugar
 
 	def initialize
-		@jugadores = {"a" => "James", "b" => "Messi"}
-		@paises = {"a" => "Colombia", "b" => "Argentina"}
+		@jugadores = {"a" => "James", "b" => "Messi", "c" => "Ronaldo"}
+		@paises = {"a" => "Colombia", "b" => "Argentina", "c" => "Portugal"}
 		@errores = 0
+		@seleccion = ''
 	end
 
 	def aumentar_intentos
@@ -14,10 +15,13 @@ class Jugar
 		@errores
 	end
 
+	def consultar_seleccion ficha1,ficha2
+		@seleccion = "#{@jugadores[ficha1]} - #{@paises[ficha2]}"
+	end
+
 	def validar_pareja ficha1,ficha2
 		if ficha1 == ficha2
-			"Fichas corresponden <br> #{@jugadores[ficha1]} - #{@paises[ficha1]}"
-
+			"Fichas corresponden"
 		else
 			aumentar_intentos
 			"FALLO"
