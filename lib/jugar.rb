@@ -6,7 +6,6 @@ class Jugar
 
 	def aumentar_intentos
 		@errores += 1
-		"FALLO"
 	end
 
 	def consultar_intentos
@@ -18,6 +17,7 @@ class Jugar
 			"Fichas corresponden"
 		else
 			aumentar_intentos
+			"FALLO"
 		end
 	end
 end
