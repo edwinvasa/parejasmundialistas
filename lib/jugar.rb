@@ -12,4 +12,12 @@ class Jugar
 	def consultar_intentos
 		@errores
 	end
+
+	def validar_pareja ficha1,ficha2
+		if ficha1 == ficha2
+			"Fichas corresponden"
+		else
+			aumentar_intentos
+		end
+	end
 end
