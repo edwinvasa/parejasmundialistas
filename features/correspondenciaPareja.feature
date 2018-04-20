@@ -13,5 +13,8 @@ Escenario: Visualizar el mensaje "Fichas corresponden" cuando el jugador corresp
 
 	Dado que abri el juego
 	Y que inicie un juego
-	Entonces debo ver "James - Colombia"
-	 	
+	E ingreso "James" como "Ficha1"
+	E ingreso "Colombia" como "Ficha2"
+	Y valido correspondencia
+	Entonces debo ver "Fichas corresponden"
+	

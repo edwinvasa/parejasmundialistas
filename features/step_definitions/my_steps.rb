@@ -14,3 +14,11 @@ Dado(/^que inicie un juego$/) do
   step 'que abri el juego'
   step 'selecciono el boton "Iniciar"'
 end
+
+Dado(/^ingreso "([^"]*)" como "([^"]*)"$/) do |valor, ficha|
+  fill_in(ficha, :with => valor)
+end
+
+Dado(/^valido correspondencia$/) do
+  click_button("Verificar")
+end
