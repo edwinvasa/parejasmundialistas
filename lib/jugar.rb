@@ -8,4 +8,8 @@ class Jugar
 		@errores += 1
 		return "FALLO"
 	end
+
+	def consultar_intentos
+		return @errores
+	end
 end
