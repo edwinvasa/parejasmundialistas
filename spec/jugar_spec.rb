@@ -6,4 +6,10 @@ describe Jugar do
 		jugar = Jugar.new
 		expect(jugar.aumentar_intentos).to eq "FALLO"
 	end 
+
+	it "El jugador selecciona una pareja incorrrecta por primera vez, muestra 1" do
+		jugar = Jugar.new
+		jugar.aumentar_intentos
+		expect(jugar.consultar_intentos).to eq 1
+	end 
 end

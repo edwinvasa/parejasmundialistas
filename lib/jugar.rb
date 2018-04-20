@@ -6,6 +6,10 @@ class Jugar
 
 	def aumentar_intentos
 		@errores += 1
-		return "FALLO"
+		"FALLO"
+	end
+
+	def consultar_intentos
+		@errores
 	end
 end
