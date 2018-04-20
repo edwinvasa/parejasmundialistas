@@ -1,6 +1,8 @@
 class Jugar
 
 	def initialize
+		@jugadores = {"a" => "James", "b" => "Messi"}
+		@paises = {"a" => "Colombia", "b" => "Argentina"}
 		@errores = 0
 	end
 
@@ -14,7 +16,8 @@ class Jugar
 
 	def validar_pareja ficha1,ficha2
 		if ficha1 == ficha2
-			"Fichas corresponden"
+			"Fichas corresponden <br> #{@jugadores[ficha1]} - #{@paises[ficha1]}"
+
 		else
 			aumentar_intentos
 			"FALLO"
